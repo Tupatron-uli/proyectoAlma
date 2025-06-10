@@ -1,33 +1,102 @@
+/* 📌 Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Fondo oscuro elegante */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
+/* 🎨 Encabezado */
 header {
-    background-color: #004080;
-    color: white;
+    background: linear-gradient(to right, #4A148C, #7B1FA2);
+    text-align: center;
     padding: 15px;
 }
 
+/* 🧭 Menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+/* 🛍️ Sección de productos */
 .products {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
 }
 
 .product {
-    border: 2px solid #004080;
-    padding: 10px;
-    background: white;
-    width: 200px;
+    background: #1F1B24;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
 }
 
 .buy-btn {
-    background-color: #008000;
+    background-color: #7B1FA2;
     color: white;
-    padding: 5px;
+    padding: 8px;
     border: none;
     cursor: pointer;
+    border-radius: 6px;
+}
+
+/* 🔑 Botones flotantes */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.floating-buttons button {
+    background: #6200ea;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* 🔐 Estilos para los formularios modales */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
 }

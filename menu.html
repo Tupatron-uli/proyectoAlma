@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOOL WORLD - Papelería</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>SCHOOL WORLD</h1>
+        <nav>
+            <a href="#products">Productos</a>
+            <a href="#cart">Carrito</a>
+        </nav>
+    </header>
+
+    <section id="products" class="products">
+        <div class="product">
+            <img src="imagenes/cuaderno.jpg" alt="Cuaderno">
+            <h2>Cuaderno Profesional</h2>
+            <p class="price">$50 MXN</p>
+            <p class="description">Cuaderno de 100 hojas con diseño elegante.</p>
+            <button class="buy-btn">Agregar al carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/plumas.jpg" alt="Plumas">
+            <h2>Set de Plumas</h2>
+            <p class="price">$30 MXN</p>
+            <p class="description">Pack de 5 plumas de gel.</p>
+            <button class="buy-btn">Agregar al carrito</button>
+        </div>
+
+        <!-- Más productos aquí -->
+    </section>
+
+    <!-- Botones flotantes -->
+    <div class="floating-buttons">
+        <button id="login-btn">Iniciar Sesión</button>
+        <button id="register-btn">Registrarse</button>
+    </div>
+
+    <!-- Formulario modal de registro -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Registro</h3>
+            <form id="registerForm">
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="text" placeholder="Nombre de usuario" required>
+                <input type="password" placeholder="Crear contraseña" required>
+                <input type="password" placeholder="Confirmar contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Formulario modal de inicio de sesión -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Iniciar Sesión</h3>
+            <form id="loginForm">
+                <input type="text" placeholder="Correo electrónico o usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
